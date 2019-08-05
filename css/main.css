@@ -97,7 +97,7 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: darkcyan;
   height: 100%;
 }
 
@@ -118,9 +118,10 @@ body {
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  line-height: 1em;
+  font-size: 1em;
+    padding: 1em;
+  background-color: darkblue;
   height: 300px;
     display:flex;
     width: 30%;
@@ -210,6 +211,17 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media all and (min-width: 1200px) {
+    .div-1, .div-2, .div-3 {
+      flex-basis: 30%;
+    }
+
+    .div-1, .div-2 {
+      border-right: 1px solid #555;
+      padding-right: 30px;
+    }
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
